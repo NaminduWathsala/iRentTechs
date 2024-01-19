@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.IRentTechs" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/Prime1</item>
+<!--        <item name="android:windowTranslucentStatus">true</item>-->
+
+    </style>
+
+    <style name="Theme.IRentTechs" parent="Base.Theme.IRentTechs" />
+
+    <style name="Theme.IRentTechsFullscreen" parent="Theme.IRentTechs" >
+        <item name="backgroundColor">@color/white</item>
+        <item name="android:windowTranslucentNavigation" >true</item>
+        <item name="android:windowFullscreen" >true</item>
+    </style>
+
+    <style name="RoundedCornersDialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/message_border</item>
+    </style>
+
+    <style name="circleImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

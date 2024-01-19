@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Prime1">#190482</color>
+    <color name="Prime2">#7752FE</color>
+    <color name="Prime3">#8E8FFA</color>
+    <color name="Prime4">#C2D9FF</color>
+    <color name="grayPrime">#999999</color>
+    <color name="background">#F3F7FC</color>
+</resources>

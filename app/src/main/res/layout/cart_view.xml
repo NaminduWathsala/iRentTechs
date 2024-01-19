@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/list_border"
+    android:elevation="10dp">
+
+    <ImageView
+        android:id="@+id/cart_product_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cart_product_image"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/cart_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="26dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Name"
+            android:textColor="@color/Prime1"
+            android:textSize="21dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cart_product_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Qty: "
+                android:gravity="center"
+                android:textColor="@color/Prime2"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:id="@+id/cart_qty_change"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/login_btn"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/edit" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/cart_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Price"
+            android:textColor="#D81B60"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/cart_product_bin"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/login_btn"
+            android:padding="10dp"
+            android:src="@drawable/bin" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

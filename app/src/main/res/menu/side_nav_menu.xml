@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/sideNaveGroupAuth">
+        <item android:title="Profile">
+            <menu>
+                <item
+                    android:id="@+id/sideNavHome"
+                    android:icon="@drawable/nav_home"
+                    android:title="Home"
+                    android:visible="true"/>
+                <item
+                    android:id="@+id/sideNavProfile"
+                    android:icon="@drawable/nav_profile"
+                    android:title="@string/profile"
+                    android:visible="true" />
+                <item
+                    android:id="@+id/sideNavSettings"
+                    android:icon="@drawable/nav_settings"
+                    android:title="Settings"
+                    android:visible="true" />
+            </menu>
+        </item>
+    </group>
+    <group android:id="@+id/sideNaveGroupMain">
+        <item android:title="Navigation">
+            <menu>
+                <item
+                    android:id="@+id/sideNavCategoryList"
+                    android:icon="@drawable/category"
+                    android:title="Categories"
+                    android:visible="true" />
+                <item
+                    android:id="@+id/sideNavCart"
+                    android:icon="@drawable/cart"
+                    android:title="Cart"
+                    android:visible="true" />
+                <item
+                    android:id="@+id/sideNavWishlist"
+                    android:icon="@drawable/wishlist"
+                    android:title="Wishlist"
+                    android:visible="true" />
+                <item
+                    android:id="@+id/sideNavOrders"
+                    android:icon="@drawable/orders"
+                    android:title="Orders"
+                    android:visible="true" />
+
+            </menu>
+        </item>
+    </group>
+
+
+</menu>

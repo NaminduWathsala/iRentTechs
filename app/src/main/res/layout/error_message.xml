@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Error"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:background="@drawable/message_border"
+    android:orientation="vertical"
+    android:paddingVertical="40dp">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/success_View"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:paddingTop="-10dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/wrong" />
+
+    <TextView
+        android:id="@+id/success_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:gravity="center"
+        android:text="@string/error"
+        android:textColor="#FF0000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/success_dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/quicksand"
+        android:gravity="center"
+        android:text="An error occurred."
+        android:textColor="#717171"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/success_dialog_ok_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF0000"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="Try Again"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+</LinearLayout>

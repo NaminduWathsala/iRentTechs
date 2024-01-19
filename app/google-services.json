@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "363788898559",
+    "project_id": "i-rent-techs",
+    "storage_bucket": "i-rent-techs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363788898559:android:d938e7b9333c6795957cca",
+        "android_client_info": {
+          "package_name": "lk.avn.irenttechs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363788898559-d8o4bcm67ck5olo8kqnfj64j91t5igi6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lk.avn.irenttechs",
+            "certificate_hash": "71f81fc95104589fb13a0dff863914ed26e8a736"
+          }
+        },
+        {
+          "client_id": "363788898559-820keg41jtf8tnccatjdc1jjhskpnr5m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDETdKxaoppDzRWJTd1lfkHBUtnfuu5D0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363788898559-820keg41jtf8tnccatjdc1jjhskpnr5m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

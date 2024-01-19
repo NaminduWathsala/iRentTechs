@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="30dp"
+    android:background="@drawable/message_border"
+    android:orientation="vertical"
+    android:paddingBottom="40dp">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/success_View"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/date" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Product check in Date"
+                android:textColor="@color/grayPrime"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/cart_date_check_in"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/profile_inputs_texts"
+                android:ems="10"
+                android:fontFamily="@font/quicksand_bold"
+                android:inputType="none"
+                android:backgroundTint="@color/background"
+                android:paddingHorizontal="15dp"
+                android:focusable="false"
+                android:text=""
+                android:textColor="@color/black"
+                android:onClick="onDateCheckInClick" />
+
+            <TextView
+                android:id="@+id/profile_name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginVertical="10dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Product check out Date"
+                android:textColor="@color/grayPrime"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/cart_date_check_out"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/profile_inputs_texts"
+                android:backgroundTint="@color/background"
+                android:ems="10"
+                android:fontFamily="@font/quicksand_bold"
+                android:inputType="none"
+                android:paddingHorizontal="15dp"
+                android:focusable="false"
+                android:text=""
+                android:textColor="@color/black"
+                android:onClick="onDateCheckOutClick" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:id="@+id/cart_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/login_btn"
+            android:backgroundTint="#717171"
+            android:elevation="10dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:paddingHorizontal="30dp"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <android.widget.Button
+            android:id="@+id/cart_product_buy_now"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/login_btn"
+            android:backgroundTint="@color/Prime2"
+            android:drawableEnd="@drawable/buy_now"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/white"
+            android:elevation="10dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:paddingHorizontal="30dp"
+            android:text="Buy Now"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
